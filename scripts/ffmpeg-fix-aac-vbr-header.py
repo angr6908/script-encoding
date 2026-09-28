@@ -42,7 +42,7 @@ def source_values(path):
 
 def main():
     if len(sys.argv) < 3:
-        print("usage: fix_aac_vbr_header.py <merged.mp4> <audio1.m4a> [audio2.m4a ...]", file=sys.stderr)
+        print("usage: ffmpeg-fix-aac-vbr-header.py <merged.mp4> <audio1.m4a> [audio2.m4a ...]", file=sys.stderr)
         sys.exit(2)
     merged = sys.argv[1]
     targets = [source_values(p) for p in sys.argv[2:]]
